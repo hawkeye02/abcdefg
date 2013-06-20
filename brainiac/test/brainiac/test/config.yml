@@ -1,0 +1,23 @@
+test:
+  google-weather:
+    order: 1
+    city: chicago
+  jenkins-builds:
+    order: 3
+    url: http://jenkins-builds.com
+  nagios-problems:
+    order: 2
+    host: http://nagios-problems.com
+    username: user
+    password: secret
+  dark-sky:
+    order: 4
+    api-key: secret
+    lat: 37.826
+    long: -122.423
+  graphite:
+    order: 5
+    graphite-url: https://graphite.com
+    username: user
+    password: secret
+    target: sumSeries(test.data)

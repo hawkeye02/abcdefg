@@ -1,0 +1,600 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,600,800);
+@import url(http://fonts.googleapis.com/css?family=Aldrich);
+
+.nocursor { cursor:none; }
+
+body {
+  background-color: black;
+  color: white;
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  background: url(/images/background.png);
+}
+
+img.header {
+  margin-top: 5px;
+}
+
+div#plugins > div.band {
+  width: 80%;
+  height: 200px;
+  display: block;
+  float: left;
+  border-radius: 15px 0;
+  padding: 5px 15px;
+  margin: 10px;
+  border: 2px solid #444;
+  box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  -webkit-box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+  background: -moz-linear-gradient(top, #444444 0%, #262626 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, #444444 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #444444 0%,#262626 100%); /* IE10+ */
+  background: linear-gradient(top, #444444 0%,#262626 100%); /* W3C */
+}
+
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+div#plugins table.calendar {
+  margin: 30px 0 0 0;
+  width: 100%;
+  box-shadow: 5px 5px 10px black;
+}
+
+div#plugins table.calendar td {
+  padding: 2px 5px;
+  width: 13%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.2);
+  border-radius: 3px;
+}
+div#plugins table.calendar td.wake-up {
+  background-color: red;
+}
+div#plugins table.calendar td.outside-business-hours {
+  background-color: orange;
+}
+div#plugins table.calendar td.none {
+  background-color: green;
+}
+
+div#plugins table.calendar span.date {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: rgba(1, 1, 1, 0.2);
+}
+
+div#plugins table.calendar span.count {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 56px;
+  text-align: center;
+}
+
+div#plugins > div.panel {
+  width: 620px;
+  height: 517px;
+  float: left;
+  position: relative;
+  margin: 15px 0 0 15px;
+  padding: 0;
+}
+
+div#plugins > div.panel > div {
+  margin: 0;
+  width: 590px;
+  height: 507px;
+  padding: 5px 15px;
+  border-radius: 15px 0;
+  border: 2px solid #444;
+  box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  -webkit-box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+  background: -moz-linear-gradient(top, #444444 0%, #262626 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, #444444 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #444444 0%,#262626 100%); /* IE10+ */
+  background: linear-gradient(top, #444444 0%,#262626 100%); /* W3C */
+}
+
+div#plugins > div h3 {
+  margin: 0;
+  color: orange;
+  font-size: 25px;
+}
+
+div#plugins ul {
+  margin: 5px;
+  list-style: square;
+  list-style-position: inside;
+  padding: 0;
+}
+
+/* Google Weather Styles */
+.temperature {
+  font-size: 290px;
+  line-height: 120%;
+  margin: 0px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.conditions {
+	font-size: 2.8em;
+	margin: 0;
+	text-align: center;
+	text-shadow: 2px 2px 4px #333;
+}
+
+div#plugins > div.panel > div.sunny,
+div#plugins > div.panel > div.clear-day {
+	background:url(/images/weather/sunny.jpg) top left no-repeat;
+}
+
+div#plugins > div.panel > div.mostly-sunny,
+div#plugins > div.panel > div.partly-cloudy-day {
+	background:url(/images/weather/partly_cloudy.jpg) top left no-repeat;
+}
+
+div#plugins > div.panel > div.overcast,
+div#plugins > div.panel > div.partly-sunny,
+div#plugins > div.panel > div.mostly-cloudy,
+div#plugins > div.panel > div.cloudy {
+	background:url(/images/weather/cloudy.jpg) top left no-repeat;
+}
+
+div#plugins > div.panel > div.mist,
+div#plugins > div.panel > div.showers,
+div#plugins > div.panel > div.scattered-showers,
+div#plugins > div.panel > div.chance-of-rain,
+div#plugins > div.panel > div.possible-sprinkling,
+div#plugins > div.panel > div.light-rain,
+div#plugins > div.panel > div.rain,
+div#plugins > div.panel > div.chance-of-tstorm,
+div#plugins > div.panel > div.scattered-thunderstorms,
+div#plugins > div.panel > div.thunderstorm,
+div#plugins > div.panel > div.chance-of-storm,
+div#plugins > div.panel > div.storm {
+	background:url(/images/weather/rain.jpg) top left no-repeat;
+}
+
+div#plugins > div.panel > div.chance-of-snow,
+div#plugins > div.panel > div.rain-and-snow,
+div#plugins > div.panel > div.light-snow,
+div#plugins > div.panel > div.freezing-drizzle,
+div#plugins > div.panel > div.sleet,
+div#plugins > div.panel > div.snow,
+div#plugins > div.panel > div.flurries,
+div#plugins > div.panel > div.icy,
+div#plugins > div.panel > div.snow-showers,
+div#plugins > div.panel > div.hail {
+	background:url(/images/weather/snow.jpg) top left no-repeat;
+}
+
+div#plugins > div.panel > div.dust,
+div#plugins > div.panel > div.fog,
+div#plugins > div.panel > div.smoke,
+div#plugins > div.panel > div.haze {
+	background:url(/images/weather/haze.jpg) top left no-repeat;
+}
+
+div#plugins > div.panel > div.windy {
+    background:url(/images/weather/wind.jpg) top left no-repeat;
+}
+
+/* Jenkins Styles */
+div#plugins > div.panel > div#jenkins-builds {
+	background: url(/images/jenkins.png) bottom left no-repeat #fff;
+	color: #335061;
+}
+
+div#plugins > div.panel > div#jenkins-builds.failing {
+	background: url(/images/jenkins_frowny.png) bottom left no-repeat #fff;
+	color:#D33833;
+}
+
+#jenkins-builds div.build_info {
+  padding: 50px 0 0 40%;
+}
+
+#jenkins-builds .build_count {
+  font-size: 290px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80%;
+}
+#jenkins-builds .build_text {
+  text-align: center;
+  text-transform: uppercase;
+	font-size: 75px;
+	font-weight: bold;
+	line-height: 100%;
+  margin-top: 20px;
+}
+#jenkins-builds .build_text .passing {
+  margin-top: 150px;
+}
+
+/* Clock styles */
+
+.clock .date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 45%;
+  height: 50%;
+
+  margin: 0 15px 15px 0;
+}
+
+.clock .date .day_of_week {
+  background: #ff3019; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+  border-bottom: 1px solid #333;
+  color: white;
+  text-align: center;
+
+  border-radius: 25px 25px 0 0;
+
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 20px;
+
+  box-shadow: 5px 5px 3px #222;
+  text-shadow: 5px 5px 10px #222;
+}
+
+.clock .date .day, .clock .date .month {
+  background: white;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 5px 5px 3px #222;
+  text-shadow: 5px 5px 15px #888;
+}
+
+.clock .date .day {
+  font-size: 140px;
+  margin: 0;
+  padding: 0;
+  line-height: 120px;
+}
+
+.clock .date .month {
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 0 0 25px 25px;
+  letter-spacing: 20px;
+  text-shadow: 5px 5px 15px #888;
+}
+
+.clock .date .month span, .clock .date .day_of_week span {
+  margin-right: -20px;
+}
+
+.clock .time {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 50%;
+}
+
+
+.clock .time .face {
+  font-family: 'Aldrich';
+  color: rgb(250, 255, 141);
+  text-shadow: 0 0 0.2em rgb(255, 96, 36), 0 0 0.05em rgb(253, 197, 64);
+  font-weight: thin;
+  font-size: 80px;
+  line-height: 75px;
+}
+.clock .time .face .colon {
+}
+
+.clock .time .location {
+  color: #ccc;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.clock .times .time:first-child {
+  width: auto;
+}
+
+.clock .times .time:first-child .face {
+  font-size: 190px;
+  line-height: 200px;
+  margin-bottom: -30px;
+}
+
+/* Jukebox Styles */
+
+#jukebox {
+  background-position: 50% 50%;
+  background-size: 100% auto;
+}
+
+#jukebox div.track-info {
+  margin: 5px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+#jukebox div.track-info ul {
+  list-style: none;
+}
+
+#jukebox div.track-info ul li {
+  font-size: 25px;
+}
+
+#jukebox div.track-info ul li.title {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/*Twitter Styles */
+div#plugins #twitter-search {
+	color: black;
+	background: url(/images/twitter-bird.png) bottom right no-repeat #a3d8fe; /* Old browsers */
+	background: url(/images/twitter-bird.png) bottom right no-repeat, -moz-linear-gradient(top, #a3d8fe 0%, #2b7db7 100%); /* FF3.6+ */
+	background: url(/images/twitter-bird.png) bottom right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3d8fe), color-stop(100%,#2b7db7)); /* Chrome,Safari4+ */
+	background: url(/images/twitter-bird.png) bottom right no-repeat, -webkit-linear-gradient(top, #a3d8fe 0%,#2b7db7 100%); /* Chrome10+,Safari5.1+ */
+	background: url(/images/twitter-bird.png) bottom right no-repeat, -o-linear-gradient(top, #a3d8fe 0%,#2b7db7 100%); /* Opera 11.10+ */
+	background: url(/images/twitter-bird.png) bottom right no-repeat, -ms-linear-gradient(top, #a3d8fe 0%,#2b7db7 100%); /* IE10+ */
+	background: url(/images/twitter-bird.png) bottom right no-repeat, linear-gradient(top, #a3d8fe 0%,#2b7db7 100%); /* W3C */
+}
+
+div#plugins .twitter-name {
+	background-color: #D5EAF9;
+	border-radius: 7px;
+	padding:10px;
+	display:table;
+	line-height:20px;
+}
+
+div#plugins .twitter-pic {
+	float:left;
+	margin-right:10px;
+  width:48px;
+}
+
+div#plugins .twitter-handle {
+	font-size:16px;
+}
+
+.ticker {
+	font-size: 30px;
+}
+
+div#plugins ul.ticker {
+	list-style-type: none;
+}
+
+div#plugins li.ticker-item {
+	margin-bottom:70px;
+}
+
+/* Pagerduty styles */
+div#plugins #pagerduty-schedule {
+
+}
+
+div#plugins #pagerduty div.incident-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px 10px 0 0 ;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/* CTA Train Tracker styles */
+
+div#plugins #cta-train-tracker ul {
+  list-style-type: none;
+}
+
+div#plugins #cta-train-tracker ul li {
+  border-radius: 5px;
+  margin: 12px 0;
+  padding: 3px 10px;
+  font-size: 40px;
+  font-family: "Helvetica Medium", "Helvetica";
+  font-weight: 900;
+  box-shadow: 5px 5px 3px #222;
+}
+
+div#plugins #cta-train-tracker ul li span.time {
+  float: right;
+}
+
+div#plugins #cta-train-tracker ul li.Pink {
+  background: rgb(226, 126, 166);
+}
+
+div#plugins #cta-train-tracker ul li.Purple {
+  background: rgb(82, 35, 152);
+}
+
+div#plugins #cta-train-tracker ul li.Blue {
+  background: rgb(0, 161, 222);
+}
+
+div#plugins #cta-train-tracker ul li.Green {
+  background: rgb(0, 155, 58);
+}
+
+div#plugins #cta-train-tracker ul li.Orange {
+  background: rgb(249, 70, 28);
+}
+
+div#plugins #cta-train-tracker ul li.Brown {
+  background: rgb(98, 54, 27);
+}
+
+div#plugins #cta-train-tracker ul li.Red {
+  background: rgb(192, 12, 48);
+}
+
+/* CTA Bus Tracker styles */
+
+div#plugins #cta-bus-tracker ul {
+  list-style-type: none;
+}
+
+div#plugins #cta-bus-tracker ul li {
+  border-radius: 5px;
+  margin: 12px 0;
+  padding: 3px 10px;
+  font-size: 40px;
+  font-family: "Helvetica Medium", "Helvetica";
+  font-weight: 900;
+  box-shadow: 5px 5px 3px #222;
+  background: rgb(17, 152, 17);
+}
+
+div#plugins #cta-bus-tracker ul li span.time {
+  float: right;
+}
+
+div#plugins .people {
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+div#plugins .on-call:first-child {
+  float: left;
+}
+div#plugins .on-call:last-child {
+  float: right;
+}
+
+div#plugins .on-call {
+  width: 47%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+div#plugins .on-call img {
+  width: 100%;
+  display: block;
+  box-shadow: 5px 5px 10px black;
+}
+
+div#plugins .on-call p.name {
+  display: none;
+  font-size: 40px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.panel > div {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+
+  /* -- transition is the magic sauce for animation -- */
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+}
+
+.panel .front {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+}
+.panel.flip .front {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+}
+
+.panel .back {
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+}
+.panel.flip .back {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+}
+
+/* Elovation Styles */
+#elovation-game > h5 {
+  clear:both;
+}
+
+.elovation-rank > li {
+  float:left;
+  list-style-type: none;
+  width: 110px;
+  padding-right:5px;
+}
+
+.rank-data {
+  margin-top: -24px;
+  line-height: 1em;
+}
+
+.rank-score {
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #333;
+}
+
+/* Github Styles */
+div#plugins div.panel div#github-commits {
+  background: url(http://octodex.github.com/images/original.jpg) center no-repeat white;
+  background-size: 400px 400px;
+  color: #4183C4;
+}
+
+#octobox {
+  width:100%;
+  height:517px;
+   background:rgba(255, 255, 255, 0.6);
+}
+
+#octobox > h2, #octobox > ul {
+
+}
