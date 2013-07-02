@@ -1,60 +1,6 @@
 devs:
   twitter-search:
     order: 1
-    term: "@braintree"
+    term: "@owntv"
 
-  #github-commits:
-    #order: 2
-    #username: "cmonty"
-    #repository: "brainiac"
-
-  #cta-bus-tracker:
-    #order: 3
-    #route-number: 8
-    #stop-id: 5933
-
-  #clock:
-    #interval: 30
-    #order: 4
-    #timezones:
-     # - timezone: "America/Chicago"
-      #  name: "Chicago"
-     # - timezone: "America/Los_Angeles"
-      #  name: "Menlo Park"
-      #- timezone: "UTC"
-      #  name: "UTC"
-
-  #cta-train-tracker:
-    #order: 5
-    #map-id: "12345"
-    #api-key: "abc123"
-
-  #nagios-problems:
-    #order: 6
-    #host: "https://url.example.com"
-    #username: "yourusername"
-    #password: "yourpassword"
-
-  #jenkins-builds:
-    #order: 7
-    #url: "https://url.example.com"
-    #username: "yourusername"
-    #password: "yourpassword"
-
-  #elovation-game:
-    #order: 8
-    #url: "http://url.example.com"
-    #game-id: "3"
-    #username: "yourusername"
-    #password: "yourpassword"
-
-  #jukebox:
-    #order: 9
-    #url: "http://url.example.com"
-  #dark-sky:
-    #order: 1
-    #api-key: c2228c7d2907abd1f6d131232cb72210
-    #lat: 41.85
-    #lon: -87.65
-    #interval: 180
-
+  
